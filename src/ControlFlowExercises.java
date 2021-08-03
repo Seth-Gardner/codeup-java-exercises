@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ControlFlowExercise {
+public class ControlFlowExercises {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 //        int i = 5;
@@ -21,22 +21,18 @@ public class ControlFlowExercise {
 //            System.out.println(i);
 //            i = i * i;
 //        }while(i < 1000000);
-        for (long i = 2; i < 1000000; i*=i) {
-            System.out.println(i);
-        }
-//        for (int i = 1; i <= 100; i++) {
-//            if (i % 3 == 0 && i % 5 == 0){
-//                System.out.println("FizzBuzz");
-//                continue;
-//            }else if(i % 3 == 0){
-//                System.out.println("Fizz");
-//                continue;
-//            }else if (i % 5 == 0){
-//                System.out.println("Buzz");
-//                continue;
-//            }
+//        for (long i = 2; i < 1000000; i*=i) {
 //            System.out.println(i);
 //        }
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0){
+                System.out.println("FizzBuzz");
+            }else if(i % 3 == 0){
+                System.out.println("Fizz");
+            }else if (i % 5 == 0){
+                System.out.println("Buzz");
+            }else{System.out.println(i);}
+        }
 //        System.out.print("What Number would you like to go up: ");
 //        int highestNumber = scanner.nextInt();
 //        System.out.println("number | squared | cubed");
