@@ -55,8 +55,6 @@ public class MoviesApplication {
         System.out.println("5 - view comedy movies");
         System.out.println("6 - view musicals");
         pick();
-        showCategory("comedy");
-
 
     }
 }
