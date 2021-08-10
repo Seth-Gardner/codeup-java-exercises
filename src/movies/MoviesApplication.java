@@ -32,17 +32,22 @@ public class MoviesApplication {
     }
 
     private static void pick(){
-        int choice = ask();
+        int choice = 1;
         while(choice != 0){
+            choice = ask();
             switch (choice){
                 case 1 : showAll();
+                        continue;
                 case 2 : showCategory("animated");
+                        continue;
                 case 3 : showCategory("drama");
+                        continue;
                 case 4 : showCategory("sci-fi");
+                        continue;
                 case 5 : showCategory("comedy");
+                        continue;
                 case 6 : showCategory("musical");
             }
-            choice = ask();
         }
     }
     public static void main(String[] args) {
@@ -55,6 +60,8 @@ public class MoviesApplication {
         System.out.println("5 - view comedy movies");
         System.out.println("6 - view musicals");
         pick();
+        showCategory("comedy");
+
 
     }
 }
