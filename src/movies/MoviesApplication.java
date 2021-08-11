@@ -1,7 +1,4 @@
 package movies;
-
-import java.util.Arrays;
-import util.Input;
 import java.util.Scanner;
 
 public class MoviesApplication {
@@ -61,7 +58,5 @@ public class MoviesApplication {
         System.out.println("6 - view musicals");
         pick();
         showCategory("comedy");
-
-
     }
 }
