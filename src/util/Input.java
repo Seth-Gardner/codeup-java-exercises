@@ -1,4 +1,5 @@
 package util;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ public class Input {
     }
 
     public String getString(){
-        System.out.println("Type Something: ");
+        System.out.print("Type Something: ");
         String userString = scanner.nextLine();
         return userString;
     }
@@ -23,22 +24,26 @@ public class Input {
     }
 
     public int getInt(int min, int max){
-        System.out.println("Please input an integer");
-        int userInt = scanner.nextInt();
-
-        if(userInt < min || userInt > max){
-            System.out.println("try again");
-            return getInt(min, max);
-        }else{
-            System.out.println("yep that works");
-            return userInt;
+        int finalInt = 0;
+        try{
+            int selection = scanner.nextInt();
+            finalInt = selection;
+        } catch (InputMismatchException e){
+            System.out.println("Try again. wrong type. I need an integer.");
         }
+        return finalInt;
     }
 
     public int getInt(){
-        System.out.print("Please inout an integer: ");
-        int userInt = scanner.nextInt();
-        return userInt;
+        System.out.print("Please input an integer: ");
+        int finalInt = -1;
+        try{
+            int selection = scanner.nextInt();
+            finalInt = selection;
+        } catch (InputMismatchException e){
+            System.out.println("Wrong type!");
+        }
+        return finalInt;
     }
 
     public double getDouble(double min, double max){
