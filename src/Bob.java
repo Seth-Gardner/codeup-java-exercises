@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class StringExercise {
+
+public class Bob {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String pinkFloyd = "We don't need no education\nWe don't need no thought control";
@@ -34,6 +35,4 @@ public class StringExercise {
 
         }while(!stop);
     }
-    // i cant believe that my commits dont count very frustrating
 }
-
