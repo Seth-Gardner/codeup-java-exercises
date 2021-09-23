@@ -34,6 +34,5 @@ public class StringExercise {
 
         }while(!stop);
     }
-    // i cant believe that my commits dont count very frustrating
 }
 

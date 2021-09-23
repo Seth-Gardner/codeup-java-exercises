@@ -51,6 +51,6 @@ public class MethodsExercises {
         System.out.println(Division(555, 1));
         System.out.println(Modulus(500, 34.33546345));
 //        System.out.println(GetInteger(1, 10));
-        System.out.println(Factorial(20));
+//        System.out.println(Factorial(20));
     }
 }
